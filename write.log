@@ -1,0 +1,38 @@
+INFO: using default process_name of "DUMMY".
+%MSG-i MF_INIT_OK:  Early 06-Jun-2023 21:46:42 CDT JobSetup
+Messagelogger initialization complete.
+%MSG
+Hello, world.  In c'tor.
+Ping!
+Begin processing the 1st record. run: 1 subRun: 0 event: 1 at 06-Jun-2023 21:46:43 CDT
+Hello, world.  From analyze: run: 1 subRun: 0 event: 1   The integer is: 2
+06-Jun-2023 21:46:43 CDT  Opened output file with pattern "testOutput.art"
+%MSG-w FastCloning:  PostProcessEvent 06-Jun-2023 21:46:43 CDT  run: 1 subRun: 0 event: 1
+Fast cloning has been deactivated for the following reasons:
+ - Input source does not read art/ROOT files.
+%MSG
+Begin processing the 2nd record. run: 1 subRun: 0 event: 2 at 06-Jun-2023 21:46:43 CDT
+Hello, world.  From analyze: run: 1 subRun: 0 event: 2   The integer is: 4
+Begin processing the 3rd record. run: 1 subRun: 0 event: 3 at 06-Jun-2023 21:46:43 CDT
+Hello, world.  From analyze: run: 1 subRun: 0 event: 3   The integer is: 6
+Begin processing the 4th record. run: 1 subRun: 0 event: 4 at 06-Jun-2023 21:46:43 CDT
+Hello, world.  From analyze: run: 1 subRun: 0 event: 4   The integer is: 8
+Begin processing the 5th record. run: 1 subRun: 0 event: 5 at 06-Jun-2023 21:46:43 CDT
+Hello, world.  From analyze: run: 1 subRun: 0 event: 5   The integer is: 10
+06-Jun-2023 21:46:45 CDT  Closed output file "testOutput.art"
+
+TrigReport ---------- Event summary -------------
+TrigReport Events total = 5 passed = 5 failed = 0
+
+TrigReport ---------- Modules in End-path ----------
+TrigReport        Run    Success      Error Name
+TrigReport          5          5          0 readAnInteger
+TrigReport          5          5          0 writeFile
+
+TimeReport ---------- Time summary [sec] -------
+TimeReport CPU = 1.336188 Real = 1.417010
+
+MemReport  ---------- Memory summary [base-10 MB] ------
+MemReport  VmPeak = 901.325 VmHWM = 419.168
+
+Art has completed and will exit with status 0.

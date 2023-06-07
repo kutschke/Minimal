@@ -1,0 +1,34 @@
+INFO: using default process_name of "DUMMY".
+%MSG-i MF_INIT_OK:  Early 06-Jun-2023 21:46:54 CDT JobSetup
+Messagelogger initialization complete.
+%MSG
+Hello, world.  In c'tor.
+Ping!
+06-Jun-2023 21:46:55 CDT  Initiating request to open input file "testOutput.art"
+06-Jun-2023 21:46:55 CDT  Opened input file "testOutput.art"
+Begin processing the 1st record. run: 1 subRun: 0 event: 1 at 06-Jun-2023 21:46:55 CDT
+Hello, world.  From analyze: run: 1 subRun: 0 event: 1   The integer is: 2
+Begin processing the 2nd record. run: 1 subRun: 0 event: 2 at 06-Jun-2023 21:46:55 CDT
+Hello, world.  From analyze: run: 1 subRun: 0 event: 2   The integer is: 4
+Begin processing the 3rd record. run: 1 subRun: 0 event: 3 at 06-Jun-2023 21:46:55 CDT
+Hello, world.  From analyze: run: 1 subRun: 0 event: 3   The integer is: 6
+Begin processing the 4th record. run: 1 subRun: 0 event: 4 at 06-Jun-2023 21:46:55 CDT
+Hello, world.  From analyze: run: 1 subRun: 0 event: 4   The integer is: 8
+Begin processing the 5th record. run: 1 subRun: 0 event: 5 at 06-Jun-2023 21:46:55 CDT
+Hello, world.  From analyze: run: 1 subRun: 0 event: 5   The integer is: 10
+06-Jun-2023 21:46:55 CDT  Closed input file "testOutput.art"
+
+TrigReport ---------- Event summary -------------
+TrigReport Events total = 5 passed = 5 failed = 0
+
+TrigReport ---------- Modules in End-path ----------
+TrigReport        Run    Success      Error Name
+TrigReport          5          5          0 readAnInteger
+
+TimeReport ---------- Time summary [sec] -------
+TimeReport CPU = 0.005714 Real = 0.005745
+
+MemReport  ---------- Memory summary [base-10 MB] ------
+MemReport  VmPeak = 903.299 VmHWM = 260.223
+
+Art has completed and will exit with status 0.
