@@ -1,0 +1,17 @@
+# Read the test file.
+#
+
+process : Read
+
+source : {
+  module_type : RootInput
+  fileNames   : [ "testOutput.art" ]
+}
+
+physics :{
+  analyzers: { readAnInteger: { module_type : AnalyzeInteger }   }
+
+  e1        : [ readAnInteger ]
+  end_paths : [e1]
+
+}

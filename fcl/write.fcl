@@ -1,0 +1,29 @@
+# Write the test file.
+#
+
+process : Write
+
+source : {
+  module_type : EmptyEvent
+  maxEvents : 5
+}
+
+physics :{
+  producers: { makeAnInteger : { module_type : ProduceInteger }  }
+  analyzers: { readAnInteger : { module_type : AnalyzeInteger }  }
+
+  t1 : [ makeAnInteger ]
+  e1 : [ readAnInteger, writeFile ]
+
+  trigger_paths  : [ t1 ]
+  end_paths      : [ e1 ]
+
+}
+
+outputs : {
+  writeFile : {
+    module_type : RootOutput
+    fileName    : "testOutput.art"
+  }
+}
+

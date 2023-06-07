@@ -1,0 +1,12 @@
+<!--  -->
+<!--  Only include art::Wrapper lines for classes that we would like to put into the event -->
+<!--  Include the non-wrapper lines for all classes on the art::Wrapper lines and     -->
+<!--  for all classes inside of those classes.                                        -->
+
+
+<lcgdict>
+
+ <class name="mu2e::IntegerProduct" />
+ <class name="art::Wrapper<mu2e::IntegerProduct>" />
+
+</lcgdict>
